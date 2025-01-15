@@ -121,14 +121,14 @@ def visualize_domains(domain_annotations, output_image):
         ax.legend(
             handles=handles,
             loc='upper right',
-            bbox_to_anchor=(1, 0.5),
+            bbox_to_anchor=(1.2, 1),
             fontsize=8,
             title="Domains",
             frameon=True
         )
 
     # Adjust layout to ensure legend is visible
-    plt.tight_layout(rect=[0, 0, 0.85, 1])  # Leave space for legend on the right
+    plt.tight_layout(rect=[0, 0, 1, 1])  
 
     plt.savefig(f"{output_image}.png", dpi=300)
     plt.savefig(f"{output_image}.pdf", dpi=300)
